@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Cookie Exporter (JSON)",
+  "version": "1.0",
+  "description": "Export cookies (including HttpOnly) to a JSON file.",
+  "permissions": [
+    "cookies",
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Export cookies"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
